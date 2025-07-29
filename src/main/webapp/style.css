@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.pad {
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.custom-logo-img {
+	
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.custom-title {
+	padding-left:20px;
+    margin: 0;
+    font-size: 24px;
+    color: #800080;
+}
+
+.center-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.form-text {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-gender {
+    margin-bottom: 20px;
+}
+
+.form-gender label {
+    margin-right: 10px;
+}
+
+.form-gender input {
+    margin-right: 5px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800080;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background: linear-gradient(135deg, #000dff, #6b73ff);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-right li {
+    margin: 0 10px;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.left-sidebar {
+    background-color: #444;
+    color: #eee;
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    top: 60px; /* Adjusted to account for the top-nav height */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 999; /* Ensures it stays below the top-nav */
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-sidebar li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.left-sidebar li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    padding-top: 60px; /* Adjusted to account for the top-nav height */
+    flex-grow: 1;
+}
